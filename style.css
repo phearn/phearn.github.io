@@ -160,3 +160,52 @@ li {
   border-style: solid;
   border-color: white;
 }
+
+.mySlides {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  box-sizing: inherit;
+}
+
+.w3-light-grey {
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+.w3-display-right {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%, -50%);
+}
+
+.w3-display-left {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%, -50%);
+}
+
+.w3-button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.w3-display-container {
+  position: relative;
+
+}
+
+.w3-content {
+  max-width: 980px;
+  margin: auto;
+}

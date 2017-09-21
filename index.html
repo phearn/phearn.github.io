@@ -224,10 +224,10 @@ end</code></pre>
   <br class="clear" />
 
 	<div class="w3-content w3-display-container">
-		<img class="mySlides w3-display-container" src="1.jpg">
-		<img class="mySlides w3-display-container" src="2.jpg">
-		<img class="mySlides w3-display-container" src="3.jpg">
-		<img class="mySlides w3-display-container" src="4.jpg">
+		<img class="mySlides-1 w3-display-container" src="Photoshop/space-pid.jpg">
+    <img class="mySlides-1 w3-display-container" src="1.jpg">
+    <img class="mySlides-1 w3-display-container" src="2.jpg">
+    <img class="mySlides-1 w3-display-container" src="3.jpg">
 		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 	</div>
@@ -238,12 +238,11 @@ end</code></pre>
   <br class="clear" />
 
 	<div class="w3-content w3-display-container">
-		<img class="mySlides w3-display-container" src="1.jpg">
-		<img class="mySlides w3-display-container" src="2.jpg">
-		<img class="mySlides w3-display-container" src="3.jpg">
-		<img class="mySlides w3-display-container" src="4.jpg">
-		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="mySlides-2 w3-display-container" src="Graphics/HFF-logo.png">
+    <img class="mySlides-2 w3-display-container" src="1.jpg">
+    <img class="mySlides-2 w3-display-container" src="2.jpg">
+		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs2(+1)">&#10095;</button>
 	</div>
 
 	<br class="clear" />
@@ -252,12 +251,11 @@ end</code></pre>
   <br class="clear" />
 
 	<div class="w3-content w3-display-container">
-		<img class="mySlides w3-display-container" src="1.jpg">
-		<img class="mySlides w3-display-container" src="2.jpg">
-		<img class="mySlides w3-display-container" src="3.jpg">
-		<img class="mySlides w3-display-container" src="4.jpg">
-		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<img class="mySlides-3 w3-display-container" src="2.jpg">
+    <img class="mySlides-3 w3-display-container" src="1.jpg">
+
+		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
+	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs3(+1)">&#10095;</button>
 	</div>
 
 	<div class="contact-me">
@@ -291,14 +289,51 @@ function plusDivs(n) {
 
 function showDivs(n) {
     var i;
-    var x = document.getElementsByClassName("mySlides");
+    var x = document.getElementsByClassName("mySlides-1");
     if (n > x.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = x.length} ;
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none"; 
     }
     x[slideIndex-1].style.display = "block"; 
-}</script>
+}
+
+var slideIndex2 = 1;
+showDivs2(slideIndex2);
+
+function plusDivs2(n) {
+    showDivs2(slideIndex2 += n);
+}
+function showDivs2(n){
+    var i;
+    var x = document.getElementsByClassName("mySlides-2");
+    if (n > x.length) {slideIndex2 = 1} 
+    if (n < 1) {slideIndex2 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex2-1].style.display = "block"; 
+
+}
+
+var slideIndex3 = 1;
+showDivs3(slideIndex3);
+
+function plusDivs3(n) {
+    showDivs3(slideIndex3 += n);
+}
+function showDivs3(n){
+    var i;
+    var x = document.getElementsByClassName("mySlides-3");
+    if (n > x.length) {slideIndex3 = 1} 
+    if (n < 1) {slideIndex3 = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[slideIndex3-1].style.display = "block"; 
+
+}
+</script>
 </html>
 
 

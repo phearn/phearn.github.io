@@ -161,7 +161,21 @@ li {
   border-color: white;
 }
 
-.mySlides {
+.mySlides-1 {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  box-sizing: inherit;
+}
+
+.mySlides-2 {
+  max-width: 900px;
+  margin: auto;
+  position: relative;
+  box-sizing: inherit;
+}
+
+.mySlides-3 {
   max-width: 900px;
   margin: auto;
   position: relative;

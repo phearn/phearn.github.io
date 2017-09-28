@@ -224,7 +224,10 @@ end</code></pre>
   <br class="clear" />
 
 	<div class="w3-content w3-display-container">
-		<img class="mySlides-1 w3-display-container" src="Photoshop/space-pid.jpg">
+		<div id="space-pid">
+			<img class="mySlides-1 w3-display-container" src="Photoshop/space-pid.jpg">
+			<div id="popup" style="display: none">This is a picture I did for a friend where I took a picture of her wearing circular glasses and stylized the image with various interposed cosmic images on various layers to create the desired effect.</div>
+		</div>
     <img class="mySlides-1 w3-display-container" src="1.jpg">
     <img class="mySlides-1 w3-display-container" src="2.jpg">
     <img class="mySlides-1 w3-display-container" src="3.jpg">
@@ -238,7 +241,10 @@ end</code></pre>
   <br class="clear" />
 
 	<div class="w3-content w3-display-container">
-		<img class="mySlides-2 w3-display-container" src="Graphics/HFF-logo.png">
+		<div id="HFF-logo">
+			<img class="mySlides-2 w3-display-container" src="Graphics/HFF-logo.png">
+			<div id="popup2" style="display: none">I created this logo in Adobe Illustrator for a local business that was looking for a lighter, cleaner feel.</div>
+		</div>
     <img class="mySlides-2 w3-display-container" src="1.jpg">
     <img class="mySlides-2 w3-display-container" src="2.jpg">
 		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
@@ -251,10 +257,22 @@ end</code></pre>
   <br class="clear" />
 
 	<div class="w3-content w3-display-container">
-		<img class="mySlides-3 w3-display-container" src="Photography/duke-gardens-bush.jpg">
-    <img class="mySlides-3 w3-display-container" src="Photography/alps-mountain.jpg">
-    <img class="mySlides-3 w3-display-container" src="Photography/vienna-pool.jpg">
-    <img class="mySlides-3 w3-display-container" src="Photography/black_white_nicole_rhett.jpg">
+		<div id="dukegardens">
+			<img class="mySlides-3 w3-display-container" src="Photography/duke-gardens-bush.jpg">
+			<div id="popup3" style="display: none">This photo was taken looking from the top directly down at a bush in the Duke Gardens in Durham, NC and was later edited in Adobe Lightroom</div>
+		</div>
+		<div id="alpsmountain">
+			<img class="mySlides-3 w3-display-container" src="Photography/alps-mountain.jpg">
+			<div id="popup4" style="display: none">I took this photo of a mountain range in the Alps while on a trip through parts of southern Germany and it was later edited in Adobe Lightroom</div>
+		</div>
+		<div id="viennapool">
+    	<img class="mySlides-3 w3-display-container" src="Photography/vienna-pool.jpg">
+  		<div id="popup5" style="display: none">This photo was taken on the same trip in Vienna, Austria using a camera function that combines around 60 images to create a still effect on water that would otherwise be moving. It was later edited in Adobe Lightroom.</div>
+  	</div>
+  	<div id="nicolerhett">
+   	 <img class="mySlides-3 w3-display-container" src="Photography/black_white_nicole_rhett.jpg">
+   	 <div id="popup6" style="display: none">This is a photo of my girlfriend and my dog that was taken in Boone, NC and was edited in both Adobe Lightroom and Adobe Photoshop.</div>
+   	</div>
 
 		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs3(-1)">&#10094;</button>
 	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs3(+1)">&#10095;</button>
@@ -300,6 +318,60 @@ function showDivs(n) {
         x[i].style.display = "none"; 
     }
     x[slideIndex-1].style.display = "block"; 
+}
+
+var e = document.getElementById('space-pid');
+e.onmouseover = function() {
+	document.getElementById('popup').style.display = 'block';
+}
+
+e.onmouseout = function() {
+	document.getElementById('popup').style.display = 'none';
+}
+
+var hfflogo = document.getElementById('HFF-logo');
+hfflogo.onmouseover = function() {
+	document.getElementById('popup2').style.display = 'block';
+}
+
+hfflogo.onmouseout = function() {
+	document.getElementById('popup2').style.display = 'none';
+}
+
+var dukegardens = document.getElementById('dukegardens');
+dukegardens.onmouseover = function() {
+	document.getElementById('popup3').style.display = 'block';
+}
+
+dukegardens.onmouseout = function() {
+	document.getElementById('popup3').style.display = 'none';
+}
+
+var alpsmountain = document.getElementById('alpsmountain');
+alpsmountain.onmouseover = function() {
+	document.getElementById('popup4').style.display = 'block';
+}
+
+alpsmountain.onmouseout = function() {
+	document.getElementById('popup4').style.display = 'none';
+}
+
+var viennapool = document.getElementById('viennapool');
+viennapool.onmouseover = function() {
+	document.getElementById('popup5').style.display = 'block';
+}
+
+viennapool.onmouseout = function() {
+	document.getElementById('popup5').style.display = 'none';
+}
+
+var nicolerhett = document.getElementById('nicolerhett');
+nicolerhett.onmouseover = function() {
+	document.getElementById('popup6').style.display = 'block';
+}
+
+nicolerhett.onmouseout = function() {
+	document.getElementById('popup6').style.display = 'none';
 }
 
 var slideIndex2 = 1;

@@ -193,14 +193,14 @@ li {
 .w3-display-right {
   position: absolute;
   top: 50%;
-  right: 0%;
+  right: -5%;
   transform: translate(0%, -50%);
 }
 
 .w3-display-left {
   position: absolute;
   top: 50%;
-  left: 0%;
+  left: -5%;
   transform: translate(0%, -50%);
 }
 
@@ -225,4 +225,41 @@ li {
 .w3-content {
   max-width: 450px;
   margin: auto;
+}
+
+.mySlides-1.w3-display-container:hover {
+  opacity: 0.3;
+}
+
+#popup {
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.middle {
+  transition: .2s ease;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+#popup:hover .middle {
+  opacity: 1;
+}
+
+.mySlides-1.w3-display-container {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
 }

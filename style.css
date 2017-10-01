@@ -234,11 +234,13 @@ li {
 #popup {
   background: #4CAF50;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-  position: absolute;
+  font-size: 12px;
+  padding: 8px 18px;
+  position: relative;
   top: 50%;
   transform: translate(0, -50%);
+  border-radius: 8px;
+  width: 300px;
 }
 
 .middle {

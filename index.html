@@ -228,9 +228,10 @@ end</code></pre>
 			<img class="mySlides-1 w3-display-container" src="Photoshop/space-pid.jpg">
 			<div class="w3-display-middle w3-black w3-padding-16 w3-small w3-container" id="popup" style="display: none">This is a picture I did for a friend where I took a picture of her wearing circular glasses and stylized the image with various interposed cosmic images on various layers to create the desired effect.</div>
 		</div>
-    <img class="mySlides-1 w3-display-container" src="1.jpg">
-    <img class="mySlides-1 w3-display-container" src="2.jpg">
-    <img class="mySlides-1 w3-display-container" src="3.jpg">
+    <div id="aristairs">
+      <img class="mySlides-1 w3-display-container" src="Photoshop/aristairs.jpg">
+      <div class="w3-display-middle w3-black w3-padding-16 w3-small w3-container" id="popup7" style="display: none">I created this picture for a friend from a series of photos of him running down the stairs by removing extra photos to give it the desired effect and then merging the layers.</div>
+    </div>
 		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 	</div>
@@ -245,8 +246,10 @@ end</code></pre>
 			<img class="mySlides-2 w3-display-container" src="Graphics/HFF-logo.png">
 			<div class="w3-display-middle w3-black w3-padding-16 w3-small w3-container" id="popup2" style="display: none">I created this logo in Adobe Illustrator for a local business that was looking for a lighter, cleaner feel.</div>
 		</div>
-    <img class="mySlides-2 w3-display-container" src="1.jpg">
-    <img class="mySlides-2 w3-display-container" src="2.jpg">
+    <div id="HFF-Globe">
+      <img class="mySlides-2 w3-display-container" src="Graphics/hff-globe-white-outline-text.png">
+      <div class="w3-display-middle w3-black w3-padding-16 w3-small w3-container" id="popup8" style="display: none">This graphic was created for the same company using Adobe Illustrator for use as a web link icon.</div>
+    </div>
 		<button class="w3-button w3-light-grey w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
 	  <button class="w3-button w3-light-grey w3-display-right" onclick="plusDivs2(+1)">&#10095;</button>
 	</div>
@@ -372,6 +375,24 @@ nicolerhett.onmouseover = function() {
 
 nicolerhett.onmouseout = function() {
 	document.getElementById('popup6').style.display = 'none';
+}
+
+var aristairs = document.getElementById('aristairs');
+aristairs.onmouseover = function() {
+  document.getElementById('popup7').style.display = 'block';
+}
+
+aristairs.onmouseout = function() {
+  document.getElementById('popup7').style.display = 'none';
+}
+
+var HFFGlobe = document.getElementById('HFF-Globe');
+HFFGlobe.onmouseover = function() {
+  document.getElementById('popup8').style.display = 'block';
+}
+
+HFFGlobe.onmouseout = function() {
+  document.getElementById('popup8').style.display = 'none';
 }
 
 var slideIndex2 = 1;
